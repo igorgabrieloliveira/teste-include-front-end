@@ -1,0 +1,117 @@
+/* Container principal da página de detalhes */
+.info-game-container {
+  width: 800px;
+  max-width: 90vw;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: var(--fundo-secundario);
+  border-radius: 15px;
+  border: 1px solid var(--borda-sutil);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Título principal do jogo */
+.game-title {
+  color: var(--cor-destaque);
+  font-size: 3em;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px rgba(187, 134, 252, 0.3);
+}
+
+/* Imagem de capa do jogo */
+.game-cover {
+  display: block;
+  max-width: 350px;
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid var(--cor-primaria);
+  margin: 0 auto 30px auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+
+/* Gênero do jogo */
+.game-genre {
+  font-weight: bold;
+  color: var(--texto-secundario);
+  margin-bottom: 20px;
+}
+
+/* Descrição do jogo */
+.game-description {
+  line-height: 1.7;
+  font-size: 1.1em;
+}
+
+/* Caixa com a nota média */
+.game-average-rating {
+  background-color: var(--cor-primaria);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1.5em;
+  font-weight: bold;
+  display: inline-block; /* Para não ocupar a largura toda */
+  margin-top: 20px;
+}
+
+/* Seção de avaliações */
+.reviews-section {
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 1px solid var(--borda-sutil);
+}
+
+.reviews-section-title {
+  color: var(--cor-destaque);
+  font-size: 2em;
+}
+
+/* Card individual de cada avaliação */
+.review-card {
+  background-color: var(--fundo-avaliacao);
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #3a3a3a;
+}
+
+.review-card p {
+  margin: 5px 0;
+}
+
+.review-author {
+  font-weight: bold;
+  color: var(--cor-destaque);
+}
+.not-found-container {
+  text-align: center;
+  padding: 50px 20px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.not-found-container h1 {
+  color: var(--cor-destaque);
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: var(--cor-primaria);
+  color: white !important;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.back-link:hover {
+  background-color: var(--cor-destaque);
+  color: var(--fundo-principal) !important;
+}
