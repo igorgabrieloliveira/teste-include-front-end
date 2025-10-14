@@ -1,4 +1,3 @@
-/* Container principal da página de detalhes */
 .info-game-container {
   width: 800px;
   max-width: 90vw;
@@ -10,7 +9,6 @@
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
 }
 
-/* Título principal do jogo */
 .game-title {
   color: var(--cor-destaque);
   font-size: 3em;
@@ -20,7 +18,6 @@
   text-shadow: 0 0 10px rgba(187, 134, 252, 0.3);
 }
 
-/* Imagem de capa do jogo */
 .game-cover {
   display: block;
   max-width: 350px;
@@ -31,20 +28,17 @@
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
 }
 
-/* Gênero do jogo */
 .game-genre {
   font-weight: bold;
   color: var(--texto-secundario);
   margin-bottom: 20px;
 }
 
-/* Descrição do jogo */
 .game-description {
   line-height: 1.7;
   font-size: 1.1em;
 }
 
-/* Caixa com a nota média */
 .game-average-rating {
   background-color: var(--cor-primaria);
   color: white;
@@ -52,11 +46,10 @@
   border-radius: 8px;
   font-size: 1.5em;
   font-weight: bold;
-  display: inline-block; /* Para não ocupar a largura toda */
+  display: inline-block; 
   margin-top: 20px;
 }
 
-/* Seção de avaliações */
 .reviews-section {
   margin-top: 40px;
   padding-top: 30px;
@@ -68,7 +61,6 @@
   font-size: 2em;
 }
 
-/* Card individual de cada avaliação */
 .review-card {
   background-color: var(--fundo-avaliacao);
   padding: 15px;

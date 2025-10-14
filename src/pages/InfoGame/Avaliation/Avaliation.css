@@ -1,0 +1,88 @@
+/* Container do formulário de avaliação */
+.avaliation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Espaçamento entre os campos */
+  background-color: var(--fundo-secundario, #1e1e1e);
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid var(--borda-sutil, #333);
+  max-width: 500px; /* Largura máxima do formulário */
+  margin: 20px auto; /* Centraliza o formulário na página */
+}
+
+.avaliation-form h3 {
+  color: var(--cor-destaque, #bb86fc);
+  margin-top: 0;
+  text-align: center;
+}
+
+/* Estilo para os campos de input e textarea */
+.avaliation-input,
+.avaliation-textarea {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--fundo-principal, #121212);
+  color: var(--texto-principal, #e0e0e0);
+  border: 1px solid var(--borda-sutil, #333);
+  border-radius: 8px;
+  font-size: 1em;
+  font-family: inherit; /* Usa a mesma fonte do resto da página */
+}
+
+.avaliation-textarea {
+  min-height: 100px;
+  resize: vertical; /* Permite que o usuário redimensione a altura */
+}
+
+.avaliation-input:focus,
+.avaliation-textarea:focus {
+  outline: none;
+  border-color: var(--cor-primaria);
+}
+
+/* Container das estrelas */
+.star-rating {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+/* Estilo individual de cada estrela (botão) */
+.star {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 2.5rem;
+  color: #555; /* Cor da estrela vazia */
+  transition: all 0.2s ease-in-out;
+}
+
+.star:hover {
+  transform: scale(1.15); /* Efeito de crescimento ao passar o mouse */
+}
+
+/* Estilo para a estrela quando está preenchida */
+.star.filled {
+  color: #ffc107; /* Cor dourada clássica */
+}
+
+/* Botão de envio */
+.submit-button {
+  background-color: var(--cor-primaria, #6200ee);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: var(--cor-destaque, #bb86fc);
+  color: var(--fundo-principal, #121212);
+}

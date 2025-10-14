@@ -1,16 +1,62 @@
-# React + Vite
+## Pré-requisitos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Antes de começar, certifique-se de que você tem as seguintes ferramentas instaladas na sua máquina:
 
-Currently, two official plugins are available:
+* [**Node.js**]
+* [**Git**]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Você pode verificar se eles estão instalados abrindo seu terminal e executando os seguintes comandos:
 
-## React Compiler
+```bash
+node -v
+npm -v
+git --version
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Passos para Rodar o Projeto Localmente
 
-## Expanding the ESLint configuration
+1.  **Clone o Repositório**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+    Abra seu terminal, navegue até o diretório onde deseja salvar o projeto e clone o repositório.
+
+    ```bash
+    # Substitua a URL pela URL oficial do seu repositório
+    git clone [https://github.com/seu-usuario/nome-do-projeto.git](https://github.com/seu-usuario/nome-do-projeto.git)
+    ```
+
+2.  **Acesse a Pasta do Projeto**
+
+    Entre no diretório que foi criado pelo comando anterior.
+
+    ```bash
+    cd nome-do-projeto
+    ```
+
+3.  **Instale as Dependências**
+
+    Este comando irá baixar todas as bibliotecas e pacotes necessários listados no arquivo `package.json`.
+
+    ```bash
+    npm install
+    ```
+
+4.  **Execute o Servidor de Desenvolvimento**
+
+    Para iniciar o projeto, use o comando abaixo. Ele ativará o servidor de desenvolvimento do Vite.
+
+    ```bash
+    npm run dev
+    ```
+
+**TECNOLOGIAS UTILIZADAS:**
+* JSX (HTML e JavaScript)
+* CSS
+* Vite
+
+**DECISÕES TÉCNICAS:**
+
+Para o gerenciamento de estado dos jogos, utilizei o hook `useState`. Essa escolha foi essencial para permitir a adição dinâmica de novas resenhas (reviews).
+
+A funcionalidade de pesquisa foi implementada com um estado `busca`, que captura o texto digitado pelo usuário em tempo real. Uma constante, `gamesFiltrados`, armazena o resultado da filtragem da lista de jogos. Finalmente, os componentes `GameCard` são responsáveis por renderizar essa lista filtrada, atualizando a interface conforme a busca é realizada.
+
+Para a submissão de novas resenhas, utilizei um estado temporário para guardar os dados do formulário (nome, nota e comentário). Após o envio, essas informações são consolidadas no estado principal da aplicação (`games`). Optei por um sistema de avaliação de 0 a 5 estrelas, por ser um padrão intuitivo e amplamente reconhecido em plataformas de jogos.
