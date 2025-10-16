@@ -20,8 +20,8 @@ git --version
     Abra seu terminal, navegue até o diretório onde deseja salvar o projeto e clone o repositório.
 
     ```bash
-    # Substitua a URL pela URL oficial do seu repositório
-    git clone [https://github.com/seu-usuario/nome-do-projeto.git](https://github.com/seu-usuario/nome-do-projeto.git)
+    # Substitua a URL pela URL a seguir: 
+    git clone [https://github.com/igorgabrieloliveira/teste-include-front-end]
     ```
 
 2.  **Acesse a Pasta do Projeto**
